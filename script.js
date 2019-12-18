@@ -21,9 +21,45 @@ for (let i = 0; i < 2; i++) {
     && a != "" && b != "" && a.length < 50 && b.length < 50) {
         appData.expenses[a] = b;
     } else {
-        i = -1;
+        i = -1; //i--
     }
 };
+
+// let i = 0;
+
+// while (i < 2) {
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+//         b = prompt("Во сколько обойдется?", "");
+
+//     if ((typeof(a)) === "string" && (typeof(a)) != null
+//     && (typeof(b)) === "string" && (typeof(b)) != null
+//     && a != "" && b != "" && a.length < 50 && b.length < 50) {
+//         appData.expenses[a] = b;
+//     } else {
+//         i = -1; //i--
+//     }
+
+//     i++;
+// }
+
+// do {
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+//         b = prompt("Во сколько обойдется?", "");
+
+//     if ((typeof(a)) === "string" && (typeof(a)) != null
+//     && (typeof(b)) === "string" && (typeof(b)) != null
+//     && a != "" && b != "" && a.length < 50 && b.length < 50) {
+//         appData.expenses[a] = b;
+//     } else {
+//         i = -1; //i--
+//     }
+
+//     i++;
+// } while (i < 2);
+
+
+
+
 
 appData.moneyPerDay = appData.budget / 30;
 
